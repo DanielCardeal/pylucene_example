@@ -1,8 +1,8 @@
 version: '3.8'
 services:
-  dev:
-    build: .
+  pylucene:
+    build: examples
     volumes:
       - ./examples:/src/examples
     working_dir: /src/examples
-    command: bash
+    command: python3 lucene_basics.py
