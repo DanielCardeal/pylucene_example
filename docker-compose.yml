@@ -5,7 +5,7 @@ services:
     volumes:
       - ./examples:/src/examples
     working_dir: /src/examples
-    command: python3 lucene_basics.py
+    command: python3 main.py
   gutenberg:
     build: examples/documents
     volumes:
