@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  dev:
+    build: .
+    volumes:
+      - ./examples:/src/examples
+    working_dir: /src/examples
+    command: bash
