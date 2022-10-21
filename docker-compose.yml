@@ -6,3 +6,9 @@ services:
       - ./examples:/src/examples
     working_dir: /src/examples
     command: python3 lucene_basics.py
+  gutenberg:
+    build: examples/documents
+    volumes:
+      - ./examples/documents:/src/examples/documents
+    working_dir: /src/examples/documents
+    command: python3 download_documents.py
