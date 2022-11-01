@@ -7,11 +7,11 @@ This repository contains a small usage example of the PyLucene API.
 First, download the example documents from the [Gutenberg Project](https://www.gutenberg.org/). This can be done by running:
 
 ```bash
-docker compose run gutenberg
+docker compose run --rm gutenberg
 ```
 
 After that, you can run the PyLucene example ("main.py" file) with:
 
 ```bash
-docker compose run pylucene
+docker compose run --rm pylucene
 ```
